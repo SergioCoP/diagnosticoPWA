@@ -38,7 +38,7 @@ const regUsers = () =>{
           }
         })
     .then(res => res.json())
-    .then(data => console.log(data))
+    .then(data => alert("Registrado el usario con nombre" + data.first_name + "Con fecha" + data.createdAt))
 }
 
 const getUser = (idUser) =>{
